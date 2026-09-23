@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aarya Patel — Developer & AI/ML Researcher</title>
+  <meta name="description" content="Portfolio of Aarya Patel. CS (Artificial Intelligence) student at VIT Bhopal, IEEE published researcher, and Java developer.">
+  <meta name="author" content="Aarya Patel">
+
+  <!-- Inter & JetBrains Mono Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="site-container header-inner">
+      <a href="#hero" class="brand">
+        <span class="brand-name">Aarya Patel</span>
+        <span class="brand-dot"></span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#about" class="nav-item">About</a>
+        <a href="#projects" class="nav-item">Projects</a>
+        <a href="#research" class="nav-item">Research</a>
+        <a href="#experience" class="nav-item">Experience</a>
+        <a href="#skills" class="nav-item">Skills</a>
+        <a href="#contact" class="nav-item">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark/light theme" title="Switch Theme">
+          <i class="fa-regular fa-moon moon-icon"></i>
+          <i class="fa-regular fa-sun sun-icon"></i>
+        </button>
+        <a href="mailto:aaryap066@gmail.com" class="action-btn">Get in touch</a>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="site-container hero-layout">
+        <div class="hero-main">
+          <div class="status-indicator">
+            <span class="status-beacon"></span>
+            <span>3rd-year CS (AI) at VIT Bhopal • Open to SDE & ML Internships</span>
+          </div>
+
+          <h1 class="hero-headline">
+            Building practical machine learning models and reliable software systems.
+          </h1>
+
+          <p class="hero-intro">
+            I'm Aarya Patel, an undergraduate at Vellore Institute of Technology, Bhopal (CGPA 9.00/10). My focus centers on computer vision forensics, predictive healthcare modeling, and object-oriented backend development in Java.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-solid">
+              Selected Projects <i class="fa-solid fa-arrow-down"></i>
+            </a>
+            <a href="#research" class="btn btn-subtle">
+              IEEE Publication <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+
+          <div class="contact-strip">
+            <a href="https://github.com/Aarya01p" target="_blank" rel="noopener noreferrer" class="strip-link">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <span class="sep">•</span>
+            <a href="https://linkedin.com/in/aarya-patel-95a40a318" target="_blank" rel="noopener noreferrer" class="strip-link">
+              <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+            <span class="sep">•</span>
+            <a href="mailto:aaryap066@gmail.com" class="strip-link">
+              <i class="fa-regular fa-envelope"></i> aaryap066@gmail.com
+            </a>
+            <span class="sep">•</span>
+            <span class="strip-text">
+              <i class="fa-solid fa-location-dot"></i> Bhopal / Ratlam, India
+            </span>
+          </div>
+        </div>
+
+        <!-- Sidebar / Snapshot card -->
+        <aside class="hero-aside">
+          <div class="snapshot-card">
+            <div class="snapshot-header">
+              <span class="snapshot-label">At a glance</span>
+              <span class="snapshot-year">2023 – 2027</span>
+            </div>
+
+            <div class="snapshot-item">
+              <div class="snapshot-key">Education</div>
+              <div class="snapshot-val">
+                <strong>VIT Bhopal University</strong>
+                <p>B.Tech in Computer Science & Engg (Artificial Intelligence)</p>
+                <span class="metric-pill">CGPA: 9.00 / 10</span>
+              </div>
+            </div>
+
+            <div class="snapshot-item">
+              <div class="snapshot-key">Current Role</div>
+              <div class="snapshot-val">
+                <strong>Java Development Intern</strong>
+                <p>Oasis Infobyte (July 2026 – Present)</p>
+              </div>
+            </div>
+
+            <div class="snapshot-item">
+              <div class="snapshot-key">Recent Work</div>
+              <div class="snapshot-val">
+                <strong>Deepfake Detection (EfficientNetB0)</strong>
+                <p>86% val accuracy on 140k dataset; deployed on Hugging Face Spaces</p>
+              </div>
+            </div>
+
+            <div class="snapshot-item">
+              <div class="snapshot-key">Research</div>
+              <div class="snapshot-val">
+                <strong>IEEE Conference Paper</strong>
+                <p>Diabetes prediction using machine learning (IEEE Xplore)</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="site-container">
+        <div class="section-head">
+          <span class="section-number">01</span>
+          <h2 class="section-title">About & Focus</h2>
+        </div>
+
+        <div class="about-content-grid">
+          <div class="about-text">
+            <p>
+              I am a third-year undergraduate specializing in Artificial Intelligence. What excites me most is taking theoretical machine learning concepts out of notebooks and putting them into working, accessible applications.
+            </p>
+            <p>
+              Recently, that meant training an <strong>EfficientNetB0</strong> transfer-learning model on over 140,000 face images to spot AI-generated deepfakes, then building a live demo on Hugging Face Spaces for public testing. On the research side, I co-authored a peer-reviewed paper on diabetes prediction that was accepted and indexed in <strong>IEEE Xplore</strong>.
+            </p>
+            <p>
+              Beyond AI models, I value core engineering fundamentals: object-oriented design in <strong>Java</strong>, clear data structures, and predictable backend workflows like reservation engines and transaction pipelines.
+            </p>
+
+            <div class="personal-highlights">
+              <div class="highlight-item">
+                <i class="fa-solid fa-trophy"></i>
+                <div>
+                  <strong>5th Place Domain-wise at Mahakumbh Hackathon 2026</strong>
+                  <span>Prompt-engineered AI coordination tool for emergency crowds.</span>
+                </div>
+              </div>
+
+              <div class="highlight-item">
+                <i class="fa-solid fa-users"></i>
+                <div>
+                  <strong>Cultural Team Co-Lead (Andy Haryana Club, VIT Bhopal)</strong>
+                  <span>Represented Madhya Pradesh at Convolution 2024 before the state Chief Minister.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="quick-facts-box">
+            <h3 class="facts-title">Snapshot Numbers</h3>
+            <ul class="facts-list">
+              <li>
+                <span class="fact-num">9.00</span>
+                <span class="fact-desc">Cumulative Grade Point Average (out of 10) at VIT Bhopal</span>
+              </li>
+              <li>
+                <span class="fact-num">140,002</span>
+                <span class="fact-desc">Balanced dataset size preprocessed and trained for Deepfake forensics</span>
+              </li>
+              <li>
+                <span class="fact-num">86%</span>
+                <span class="fact-desc">Validation accuracy achieved on deepfake facial image classification</span>
+              </li>
+              <li>
+                <span class="fact-num">1</span>
+                <span class="fact-desc">Published IEEE conference paper on healthcare predictive modeling</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+      <div class="site-container">
+        <div class="section-head">
+          <span class="section-number">02</span>
+          <h2 class="section-title">Selected Projects</h2>
+        </div>
+
+        <div class="projects-list">
+          <!-- Project 1: Deepfake Detection -->
+          <article class="project-entry">
+            <div class="project-meta-col">
+              <span class="project-category">Machine Learning / Vision</span>
+              <span class="project-date">June 2026</span>
+              <div class="project-links-aside">
+                <a href="https://aarya47-deepfake-detector.hf.space" target="_blank" rel="noopener noreferrer" class="link-btn">
+                  Live Space <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="https://github.com/Aarya01p" target="_blank" rel="noopener noreferrer" class="link-btn">
+                  GitHub <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-body-col">
+              <div class="project-title-row">
+                <h3 class="project-heading">Deepfake Facial Image Classifier</h3>
+                <span class="result-badge">86% Val Accuracy</span>
+              </div>
+
+              <p class="project-summary">
+                A convolutional neural network classifier built to differentiate authentic human portraits from AI-generated deepfakes, addressing synthetic media verification challenges.
+              </p>
+
+              <div class="project-deep-dive">
+                <ul>
+                  <li><strong>Architecture:</strong> Applied transfer learning using <code>EfficientNetB0</code> pretrained on ImageNet, fine-tuned with custom classification heads for forensic feature extraction.</li>
+                  <li><strong>Data Engineering:</strong> Cleaned, normalized, and augmented a balanced corpus of <strong>140,002 images</strong> with geometric rotations, scaling, and color jitter to mitigate overfitting.</li>
+                  <li><strong>Deployment:</strong> Packaged an interactive web inference UI using Gradio and deployed it as a persistent public demo on Hugging Face Spaces.</li>
+                </ul>
+              </div>
+
+              <div class="stack-list">
+                <span class="stack-tag">Python</span>
+                <span class="stack-tag">TensorFlow</span>
+                <span class="stack-tag">Keras</span>
+                <span class="stack-tag">EfficientNetB0</span>
+                <span class="stack-tag">OpenCV</span>
+                <span class="stack-tag">Gradio</span>
+                <span class="stack-tag">Hugging Face</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: AI Emergency Response -->
+          <article class="project-entry">
+            <div class="project-meta-col">
+              <span class="project-category">Hackathon / Applied AI</span>
+              <span class="project-date">Early 2026</span>
+              <div class="project-links-aside">
+                <a href="https://github.com/Aarya01p" target="_blank" rel="noopener noreferrer" class="link-btn">
+                  GitHub <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-body-col">
+              <div class="project-title-row">
+                <h3 class="project-heading">Emergency Response Coordination Assistant</h3>
+                <span class="result-badge honor-badge">5th Place • Mahakumbh '26</span>
+              </div>
+
+              <p class="project-summary">
+                Built during the Mahakumbh Hackathon 2026. An incident response coordinator designed to route critical medical and logistical support in high-density gathering scenarios.
+              </p>
+
+              <div class="project-deep-dive">
+                <ul>
+                  <li>Utilized prompt engineering techniques and AI-assisted workflows to parse incoming crowd distress reports and classify urgency levels.</li>
+                  <li>Structured an automated dispatch log reducing response triage friction for field emergency teams.</li>
+                </ul>
+              </div>
+
+              <div class="stack-list">
+                <span class="stack-tag">Prompt Engineering</span>
+                <span class="stack-tag">Generative AI</span>
+                <span class="stack-tag">Python</span>
+                <span class="stack-tag">Rapid Prototyping</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Online Reservation System -->
+          <article class="project-entry">
+            <div class="project-meta-col">
+              <span class="project-category">Java Backend / OOP</span>
+              <span class="project-date">2026 (Ongoing)</span>
+              <div class="project-links-aside">
+                <a href="https://github.com/Aarya01p" target="_blank" rel="noopener noreferrer" class="link-btn">
+                  GitHub <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-body-col">
+              <div class="project-title-row">
+                <h3 class="project-heading">Java Online Reservation & PNR System</h3>
+                <span class="result-badge plain-badge">Oasis Infobyte</span>
+              </div>
+
+              <p class="project-summary">
+                A modular railway/transit reservation application modeling realistic passenger booking workflows, state management, and record integrity.
+              </p>
+
+              <div class="project-deep-dive">
+                <ul>
+                  <li>Implemented credential-based login verification, session isolation, and seat availability tracking.</li>
+                  <li>Built deterministic PNR generation, cancellation logic with refund calculation, and formatted terminal outputs.</li>
+                </ul>
+              </div>
+
+              <div class="stack-list">
+                <span class="stack-tag">Java</span>
+                <span class="stack-tag">Object-Oriented Design</span>
+                <span class="stack-tag">Data Structures</span>
+                <span class="stack-tag">State Management</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Number Guessing Game -->
+          <article class="project-entry">
+            <div class="project-meta-col">
+              <span class="project-category">Java Core / Logic</span>
+              <span class="project-date">July 2026</span>
+              <div class="project-links-aside">
+                <a href="https://github.com/Aarya01p" target="_blank" rel="noopener noreferrer" class="link-btn">
+                  GitHub <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-body-col">
+              <div class="project-title-row">
+                <h3 class="project-heading">Algorithmic Number Guessing System</h3>
+                <span class="result-badge plain-badge">Core Java</span>
+              </div>
+
+              <p class="project-summary">
+                Interactive console application incorporating configurable difficulty tiers, score multipliers, bounded attempts, and session persistence.
+              </p>
+
+              <div class="stack-list">
+                <span class="stack-tag">Java</span>
+                <span class="stack-tag">Pseudo-random Logic</span>
+                <span class="stack-tag">Input Validation</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Section -->
+    <section class="section" id="research">
+      <div class="site-container">
+        <div class="section-head">
+          <span class="section-number">03</span>
+          <h2 class="section-title">Research & Publications</h2>
+        </div>
+
+        <div class="paper-card">
+          <div class="paper-header">
+            <div class="paper-indexing">
+              <span class="indexing-badge">IEEE Xplore</span>
+              <span class="paper-date">Published Jan 2025 • Conference Dec 2025</span>
+            </div>
+            <a href="https://ieeexplore.ieee.org/abstract/document/11330336" target="_blank" rel="noopener noreferrer" class="btn btn-subtle btn-sm">
+              View on IEEE Xplore <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+
+          <h3 class="paper-title">
+            Machine Learning–Based Diabetes Prediction in Healthcare
+          </h3>
+
+          <p class="paper-authors">
+            <strong>Authors:</strong> Co-authored and presented by Aarya Patel et al.
+          </p>
+
+          <p class="paper-abstract">
+            This study evaluates predictive machine learning architectures for early diabetes risk detection. We conducted comparative benchmarking across standard classifiers, evaluating data preprocessing pipelines, normalization methods, and metric sensitivity for clinical datasets.
+          </p>
+
+          <div class="paper-details-grid">
+            <div class="detail-box">
+              <span class="detail-label">My Contribution</span>
+              <p>Data normalization, baseline model training, hyperparameter evaluation, and manuscript co-drafting.</p>
+            </div>
+            <div class="detail-box">
+              <span class="detail-label">Document ID</span>
+              <div class="doi-row">
+                <code id="doi-val">11330336</code>
+                <button id="copy-doi-btn" class="copy-link-btn" title="Copy Document ID">
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Education Section -->
+    <section class="section" id="experience">
+      <div class="site-container">
+        <div class="section-head">
+          <span class="section-number">04</span>
+          <h2 class="section-title">Experience & Education</h2>
+        </div>
+
+        <div class="split-timeline">
+          <!-- Experience Column -->
+          <div class="timeline-block">
+            <h3 class="block-title"><i class="fa-solid fa-briefcase"></i> Work Experience</h3>
+
+            <div class="timeline-entry">
+              <div class="entry-header">
+                <div>
+                  <h4 class="entry-role">Java Development Intern</h4>
+                  <div class="entry-company">Oasis Infobyte</div>
+                </div>
+                <span class="entry-period">July 2026 – Present</span>
+              </div>
+              <ul class="entry-points">
+                <li>Built a console-based Number Guessing Game with bounded attempts, difficulty scaling, dynamic score weighting, and replay session tracking.</li>
+                <li>Developing an Online Reservation System in Java, handling passenger booking workflows, PNR code allocation, record retrieval, and cancellation handling.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Education Column -->
+          <div class="timeline-block">
+            <h3 class="block-title"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+
+            <div class="timeline-entry">
+              <div class="entry-header">
+                <div>
+                  <h4 class="entry-role">B.Tech, Computer Science & Engineering (Artificial Intelligence)</h4>
+                  <div class="entry-company">Vellore Institute of Technology, Bhopal</div>
+                </div>
+                <span class="entry-period">2023 – 2027</span>
+              </div>
+              <p class="entry-score">Current CGPA: <strong>9.00 / 10</strong></p>
+              <p class="entry-notes">
+                Coursework: Machine Learning, Deep Neural Networks, Data Structures & Algorithms, Object-Oriented Programming, Database Systems.
+              </p>
+            </div>
+
+            <div class="timeline-entry">
+              <div class="entry-header">
+                <div>
+                  <h4 class="entry-role">Senior Secondary (Class XII)</h4>
+                  <div class="entry-company">Shri Guru TeghBahadur Academy, Ratlam</div>
+                </div>
+                <span class="entry-period">2022</span>
+              </div>
+              <p class="entry-score">Score: <strong>78.8%</strong></p>
+            </div>
+
+            <div class="timeline-entry">
+              <div class="entry-header">
+                <div>
+                  <h4 class="entry-role">Secondary (Class X)</h4>
+                  <div class="entry-company">Shri Guru TeghBahadur Academy, Ratlam</div>
+                </div>
+                <span class="entry-period">2020</span>
+              </div>
+              <p class="entry-score">Score: <strong>89.2%</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+      <div class="site-container">
+        <div class="section-head">
+          <span class="section-number">05</span>
+          <h2 class="section-title">Skills & Tooling</h2>
+        </div>
+
+        <div class="skills-matrix">
+          <div class="skill-group">
+            <h3 class="group-title">Programming Languages</h3>
+            <div class="badges-row">
+              <span class="skill-badge primary-badge">Java (Core & OOP)</span>
+              <span class="skill-badge primary-badge">Python</span>
+              <span class="skill-badge">HTML5</span>
+              <span class="skill-badge">CSS3</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="group-title">Machine Learning & Concepts</h3>
+            <div class="badges-row">
+              <span class="skill-badge primary-badge">Deep Learning</span>
+              <span class="skill-badge primary-badge">Convolutional Neural Networks (CNNs)</span>
+              <span class="skill-badge primary-badge">Transfer Learning</span>
+              <span class="skill-badge">Data Preprocessing & Augmentation</span>
+              <span class="skill-badge">Model Evaluation & Metrics</span>
+              <span class="skill-badge">Object-Oriented Programming (OOP)</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="group-title">Libraries & Frameworks</h3>
+            <div class="badges-row">
+              <span class="skill-badge">TensorFlow</span>
+              <span class="skill-badge">Keras</span>
+              <span class="skill-badge">OpenCV</span>
+              <span class="skill-badge">NumPy</span>
+              <span class="skill-badge">Scikit-learn</span>
+              <span class="skill-badge">Gradio</span>
+              <span class="skill-badge">Matplotlib</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="group-title">Developer Tools & Platforms</h3>
+            <div class="badges-row">
+              <span class="skill-badge">Git & GitHub</span>
+              <span class="skill-badge">VS Code</span>
+              <span class="skill-badge">Hugging Face Spaces</span>
+              <span class="skill-badge">Kaggle</span>
+              <span class="skill-badge">Microsoft Azure</span>
+              <span class="skill-badge">IBM watsonx</span>
+              <span class="skill-badge">Canva</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications sub-block -->
+        <div class="certifications-sub">
+          <h3 class="cert-heading">Certifications & Programs</h3>
+          <div class="cert-grid">
+            <div class="cert-item">
+              <span class="cert-issuer">IBM Skills Network</span>
+              <strong class="cert-name">IBM Generative AI using watsonx</strong>
+            </div>
+            <div class="cert-item">
+              <span class="cert-issuer">Microsoft Certified</span>
+              <strong class="cert-name">Azure Data Fundamentals (DP-900)</strong>
+            </div>
+            <div class="cert-item">
+              <span class="cert-issuer">ServiceNow</span>
+              <strong class="cert-name">Virtual Internship Program Certificate</strong>
+            </div>
+            <div class="cert-item">
+              <span class="cert-issuer">Python Specialization</span>
+              <strong class="cert-name">Applied Machine Learning in Python</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <div class="site-container">
+        <div class="section-head">
+          <span class="section-number">06</span>
+          <h2 class="section-title">Get in Touch</h2>
+        </div>
+
+        <div class="contact-box">
+          <div class="contact-left">
+            <h3 class="contact-pitch">Let's connect.</h3>
+            <p class="contact-sub">
+              Whether you have an internship opportunity, a research question, or a project collaboration in mind, feel free to send an email or drop a message.
+            </p>
+
+            <div class="direct-methods">
+              <div class="method-row">
+                <span class="method-label">Email:</span>
+                <a href="mailto:aaryap066@gmail.com" class="method-value">aaryap066@gmail.com</a>
+              </div>
+              <div class="method-row">
+                <span class="method-label">Phone:</span>
+                <a href="tel:+918989896435" class="method-value">+91-8989896435</a>
+              </div>
+              <div class="method-row">
+                <span class="method-label">LinkedIn:</span>
+                <a href="https://linkedin.com/in/aarya-patel-95a40a318" target="_blank" rel="noopener noreferrer" class="method-value">linkedin.com/in/aarya-patel-95a40a318</a>
+              </div>
+              <div class="method-row">
+                <span class="method-label">GitHub:</span>
+                <a href="https://github.com/Aarya01p" target="_blank" rel="noopener noreferrer" class="method-value">github.com/Aarya01p</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-right">
+            <form id="contact-form" class="clean-form">
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" required placeholder="Alex Smith">
+                </div>
+                <div class="form-field">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" required placeholder="alex@example.com">
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" required placeholder="Project discussion / Internship inquiry">
+              </div>
+
+              <div class="form-field">
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" required placeholder="Hi Aarya, I'd like to talk about..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-solid btn-full" id="submit-btn">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Clean Footer -->
+  <footer class="site-footer">
+    <div class="site-container footer-layout">
+      <div class="footer-left">
+        <span class="footer-name">Aarya Patel</span>
+        <span class="footer-meta">B.Tech CSE (AI) • VIT Bhopal</span>
+      </div>
+
+      <div class="footer-center">
+        <span>© <span id="year">2026</span> Aarya Patel</span>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://github.com/Aarya01p" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/aarya-patel-95a40a318" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:aaryap066@gmail.com">Email</a>
+        <a href="#hero" class="to-top-btn" title="Back to top">↑ Top</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Simple Feedback Toast -->
+  <div id="toast" class="toast-popup" role="alert">
+    <span id="toast-text">Message sent.</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
